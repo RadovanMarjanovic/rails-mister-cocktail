@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>RailsMisterCocktail</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +12,13 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar">
+      <div class="logo"><p>Le Tipsy Wagon</p></div>
+      <div class="search-bar"><p>Search</p></div>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
 
   <%= javascript_include_tag "application" %>
   <%= javascript_pack_tag "application" %>

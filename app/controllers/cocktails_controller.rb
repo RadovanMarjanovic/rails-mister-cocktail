@@ -35,9 +35,10 @@ class CocktailsController < ApplicationController
   end
 
   def destroy
+    raise
     find
     @cocktail.destroy
-    redirect_to root_path
+    redirect_to cocktails_path
   end
 
   private
